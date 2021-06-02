@@ -1,5 +1,4 @@
 package com.kara.config;
-
 import com.kara.entity.Product;
 import com.kara.entity.ProductCategory;
 import org.springframework.context.annotation.Configuration;
@@ -26,7 +25,6 @@ public class MyDataRestConfig implements RepositoryRestConfigurer {
                 .forDomainType(ProductCategory.class)
                 .withItemExposure((metadata, httpMethods) -> httpMethods.disable(theUnsupportedActions))
                 .withCollectionExposure((metadata, httpMethods) -> httpMethods.disable(theUnsupportedActions));
-
 
     }
 }
