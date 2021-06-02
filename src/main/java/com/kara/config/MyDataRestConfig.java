@@ -9,7 +9,7 @@ import org.springframework.http.HttpMethod;
 @Configuration
 public class MyDataRestConfig implements RepositoryRestConfigurer {
 
-    @Override 
+    @Override
     public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config) {
 
         HttpMethod[] theUnsupportedActions = {HttpMethod.PUT, HttpMethod.POST, HttpMethod.DELETE};
